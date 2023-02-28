@@ -86,14 +86,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const posts = document.querySelectorAll(".blog-post");
   console.log(posts);
 
-  posts.forEach(
-    (post) =>
-      addEventListener("mouseenter", function (event) {
-        post.classList.toggle("red");
-      }),
-
+  posts.forEach((post) =>
     addEventListener("mouseout", function (event) {
-      post.classList.toggle("purple");
+      post.classList.toggle("red");
     })
   );
 });
